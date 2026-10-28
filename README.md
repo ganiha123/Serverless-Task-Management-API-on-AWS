@@ -44,20 +44,38 @@ IAM roles control which Lambda functions can access DynamoDB.
 ### AWS Lambda Functions
 Four separate functions for Create, Read, Update and Delete.
 
+<img width="1354" height="768" alt="Lambda Functions" src="https://github.com/user-attachments/assets/a00cbdeb-d123-4416-b70d-1294a048ec7b" />
+
+
 ### DynamoDB Table
 `TaskFlowItems` table with partition key `id`.
+
+<img width="1354" height="768" alt="DynamoDB Table" src="https://github.com/user-attachments/assets/615a921a-55ae-4905-b28a-a7bd0b9e348f" />
+
 
 ### DynamoDB Items
 Task items stored with `id`, `status` and `title`.
 
+<img width="1376" height="768" alt="DynamoDB Items" src="https://github.com/user-attachments/assets/972b68fa-fa47-4543-ac3f-3324d1fea8e9" />
+
+
 ### API Gateway
 `TaskFlow-API`, a regional REST API.
+
+<img width="1354" height="768" alt="API Gateway" src="https://github.com/user-attachments/assets/181894ec-7408-46dc-a9b6-30e388ca0f2b" />
+
 
 ### API Gateway Resources
 `/tasks` (GET, POST) and `/tasks/{id}` (PUT, DELETE) with Lambda proxy integration.
 
+<img width="1376" height="768" alt="API Gateway Resources" src="https://github.com/user-attachments/assets/99cf41d0-a551-4db5-ad43-e5e372318233" />
+
+
 ### IAM Role
 Execution role with the required policy attached.
+
+<img width="1376" height="768" alt="IAM Role" src="https://github.com/user-attachments/assets/bcfa7407-d07e-4996-82a4-b043b855f16b" />
+
 
 ## What I Learned
 
