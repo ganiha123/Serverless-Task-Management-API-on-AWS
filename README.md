@@ -39,6 +39,26 @@ Client (Postman / App)
 
 IAM roles control which Lambda functions can access DynamoDB.
 
+## Screenshots
+
+### AWS Lambda Functions
+Four separate functions for Create, Read, Update and Delete.
+
+### DynamoDB Table
+`TaskFlowItems` table with partition key `id`.
+
+### DynamoDB Items
+Task items stored with `id`, `status` and `title`.
+
+### API Gateway
+`TaskFlow-API`, a regional REST API.
+
+### API Gateway Resources
+`/tasks` (GET, POST) and `/tasks/{id}` (PUT, DELETE) with Lambda proxy integration.
+
+### IAM Role
+Execution role with the required policy attached.
+
 ## What I Learned
 
 - How serverless architecture eliminates infrastructure management
